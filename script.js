@@ -16,6 +16,14 @@ const projects = [
     url: "",
     description: "",
   },
+  {
+    website: "Homecare Website",
+    link: "https://e40sr.github.io/comforthomecare-",
+    languages: ["HTML", "CSS", "JavaScript"],
+    img: "images/homecare-img.jpg",
+    url: "https://github.com/E40sr/comforthomecare",
+    description: "A website for a homecare service, built with HTML, CSS, and JavaScript."
+  }
 ];
 
 const projectHTML = projects
