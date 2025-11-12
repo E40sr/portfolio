@@ -1,8 +1,9 @@
 backend:
   name: github
-  repo: E40sr/portfolio # Replace with your GitHub username/repo
+  repo: E40sr/portfolio
   branch: main
   open_authoring: true
+  publish_mode: editorial_workflow
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
