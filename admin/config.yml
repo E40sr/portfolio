@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: yourusername/https://github.com/E40sr/portfolio.git
+  repo: https://github.com/E40sr/portfolio.git
   branch: main
 
 media_folder: "images/uploads"
@@ -16,3 +16,4 @@ collections:
         fields:
           - {label: "Page Title", name: "title", widget: "string"}
           - {label: "Main Content", name: "body", widget: "markdown"}
+  
