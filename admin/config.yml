@@ -2,18 +2,15 @@ backend:
   name: github
   repo: E40sr/portfolio
   branch: main
-  open_authoring: true
-  publish_mode: editorial_workflow
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: "images"
+public_folder: "/images"
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    folder: "content/pages"
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
     create: true
-    slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
