@@ -2,6 +2,8 @@ backend:
   name: github
   repo: E40sr/portfolio
   branch: main
+  # open_authoring: true       # Uncomment if you want open-authoring
+  # publish_mode: editorial_workflow  # Required if open_authoring is true
 
 media_folder: "images"
 public_folder: "/images"
@@ -11,6 +13,10 @@ collections:
     label: "Blog"
     folder: "content/blog"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # automatic post filenames
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Summary", name: "summary", widget: "text", hint: "Short summary for previews"}
       - {label: "Body", name: "body", widget: "markdown"}
+  
