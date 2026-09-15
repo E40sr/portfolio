@@ -65,4 +65,4 @@ const projectHTML = projects
   })
   .join("");
 
-document.querySelector("#projects").innerHTML += projectHTML;
+document.querySelector("#projects").innerHTML += projectHTML; 
