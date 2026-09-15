@@ -45,7 +45,7 @@ const projectHTML = projects
             <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
             <span class="filename">dashboard.js</span>
           </div>
-          <div class="project-thumb"><img scr="${img}" alt="${website}" class="project-img" /></div>
+          <div class="project-thumb"><img src="${img}" alt="${website}" class="project-img" /></div>
           <div class="project-body">
             <h3>${website}</h3>
             <p>${description || "No description available."}</p>
