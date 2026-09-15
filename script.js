@@ -51,7 +51,7 @@ const projectHTML = projects
             <p>${description || "No description available."}</p>
     
             <div class="project-tags">
-              <span>JavaScript</span><span>Bootstrap</span><span>CSS3</span>
+              <span>${languages[0]}</span><span>${languages[1]}</span><span>${languages[2]}</span><span>${languages[3] || "..."}</span>
             </div>
             <div class="project-links">
 <a href="${url || "#"}" target="_blank">Code</a>
