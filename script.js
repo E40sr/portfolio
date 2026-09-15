@@ -38,19 +38,29 @@ const projectHTML = projects
     } = project;
 
     return `
-      <div class="project-div" data-sizing="intrinsic">
-        <h3>${website}</h3>
-        <img src="${img}" alt="${website}" class="project-img" />
-        
-        <p><strong>Languages:</strong> ${languages.join(", ")}</p>
-        
-        <div class="project-links">
-          <a href="${url || "#"}" target="_blank">Code</a>
+      
+
+      <div class="project-div">
+          <div class="card-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="filename">dashboard.js</span>
+          </div>
+          <div class="project-thumb"><img scr="${img}" alt="${website}" class="project-img" /></div>
+          <div class="project-body">
+            <h3>${website}</h3>
+            <p>${description || "No description available."}</p>
+    
+            <div class="project-tags">
+              <span>JavaScript</span><span>Bootstrap</span><span>CSS3</span>
+            </div>
+            <div class="project-links">
+<a href="${url || "#"}" target="_blank">Code</a>
           <a href="${link || "#"}" target="_blank">Visit site</a>
+     
+              
+            </div>
+          </div>
         </div>
-        
-        <p>${description || "No description available."}</p>
-      </div>
     `;
   })
   .join("");
